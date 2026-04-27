@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        radial-gradient(circle at 50% 15%, rgba(160,40,70,.55), transparent 60%),
+        radial-gradient(circle at 50% 85%, rgba(60,10,30,.85), transparent 60%),
+        linear-gradient(180deg, #0a050a, #12060c);
+    color: #eaeaea;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500&display=swap');
+
+/* Global Animations */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes smoothOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.1);
+        filter: blur(25px);
+    }
+}
+
+@keyframes fromTop {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fromLeft {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fromRight {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fromBottom {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.smooth-out {
+    animation: smoothOut 1.2s ease forwards;
+}
+
+.from-top {
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: fromTop 0.8s ease forwards;
+}
+
+.from-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: fromLeft 0.8s ease forwards;
+}
+
+.from-right {
+    opacity: 0;
+    transform: translateX(40px);
+    animation: fromRight 0.8s ease forwards;
+}
+
+.from-bottom {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fromBottom 0.8s ease forwards;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 0.8s ease forwards;
+}
+
+.typewriter {
+    border-right: 2px solid #ff4d6d;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Scroll Animation Classes */
+.slide-in-left {
+    transform: translateX(-40px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.slide-in-right {
+    transform: translateX(40px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.slide-in-up {
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+/* Active states for scroll animations */
+.slide-in-left.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-in-right.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-in-up.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}

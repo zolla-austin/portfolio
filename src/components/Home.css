@@ -1,0 +1,158 @@
+.home {
+  margin: 160px 200px;
+  color: #f2f2f2;
+}
+
+.home-container {
+  display: flex;
+  gap: 6rem;
+}
+
+.home-p {
+  background: rgba(255, 80, 120, 0.15);
+  color: #ff9db3;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 6px 14px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.home-s {
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+.info-home h1 {
+  font-size: 70px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.info-home h3 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+  color: #ff9db3;
+}
+
+/* TEXT */
+.info-p {
+  color: #d0d0d0;
+  padding-bottom: 20px;
+}
+
+.info-p p {
+  padding-bottom: 5px;
+}
+
+.info-p2 {
+  display: flex;
+  gap: 1rem;
+  color: #cfcfcf;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.btnn {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 30px;
+}
+
+.btn-home1 {
+  background: linear-gradient(135deg, #ff4d6d, #7a0c2e);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(255, 80, 120, 0.4);
+}
+
+.btn-home1:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(255, 80, 120, 0.6);
+}
+
+.btn-home2 {
+  background: transparent;
+  border: 2px solid #ff4d6d;
+  border-radius: 12px;
+  padding: 12px 18px;
+  color: #ff4d6d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-home2:hover {
+  background: #ff4d6d;
+  color: #fff;
+}
+
+.hhr {
+  padding-bottom: 30px;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid rgba(255, 80, 120, 0.4);
+}
+
+.follow {
+  display: flex;
+  gap: 1rem;
+}
+
+.follow ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+}
+
+.follow ul li {
+  list-style: none;
+}
+
+.follow ul a {
+  text-decoration: none;
+  color: #ff9db3;
+  transition: 0.3s;
+}
+
+.follow ul a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff4d6d;
+}
+
+.home img {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 80, 120, 0.4);
+}
+
+@media (max-width: 768px) {
+  .home {
+    margin: 120px 20px;
+  }
+  
+  .home-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .info-home h1 {
+    font-size: 50px;
+  }
+  
+  .info-home h3 {
+    font-size: 30px;
+  }
+  
+  .home img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
